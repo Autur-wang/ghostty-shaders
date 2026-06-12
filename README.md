@@ -6,6 +6,8 @@ terminal text around it, and a meteor-trail **cursor**. The three run as a
 post-processing **chain** — declaration order *is* compositing order, each shader
 receives the previous one's output as its background.
 
+![The black hole bending terminal text and the starfield around its event horizon](./assets/demo.png)
+
 > Ghostty applies multiple `custom-shader` lines in sequence: shader N reads
 > shader N−1's result via `iChannel0`. So you can't drop one file in isolation
 > and expect the same look — the order below matters.
