@@ -11,7 +11,6 @@ receives the previous one's output as its background.
 > Ghostty applies multiple `custom-shader` lines in sequence: shader N reads
 > shader N−1's result via `iChannel0`. So you can't drop one file in isolation
 > and expect the same look — the order below matters.
-![Uploading image.png…]()
 
 ## Layers
 
