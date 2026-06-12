@@ -1,0 +1,12 @@
+# --- Custom Shaders: 链式执行,顺序即合成顺序 ---
+# 1) starfield: 全屏星空(warp 飞行层 + 静态满屏层),加法叠加在终端画面上
+# 2) blackhole: 引力透镜以前一层(终端+星空)为背景天空,星星会被弯折/吞噬。
+#    番茄钟:整点前膨胀、休息时缩小、停止打字渐隐。
+# 3) cursor_blaze: 流星拖尾光标。放链尾,不被透镜弯折。
+#
+# 把下面三行里的路径改成你 clone 后 shaders/ 的绝对路径。
+# Ghostty 不支持 ~ 展开,必须写完整路径。
+custom-shader = /ABSOLUTE/PATH/TO/ghostty-shaders/shaders/starfield.glsl
+custom-shader = /ABSOLUTE/PATH/TO/ghostty-shaders/shaders/blackhole.glsl
+custom-shader = /ABSOLUTE/PATH/TO/ghostty-shaders/shaders/cursor_blaze.glsl
+custom-shader-animation = true
